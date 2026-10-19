@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Clip path to round badge -->
+    <clipPath id="circleClip">
+      <circle cx="250" cy="250" r="230" />
+    </clipPath>
+    <!-- Drop shadow filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle cx="250" cy="250" r="240" fill="#0b3b60" />
+  <circle cx="250" cy="250" r="232" fill="#ffffff" />
+
+  <!-- Tricolor Background inside clip -->
+  <g clip-path="url(#circleClip)">
+    <!-- Saffron Band -->
+    <rect x="0" y="0" width="500" height="175" fill="#FF9933" />
+    <!-- White Middle Band -->
+    <rect x="0" y="175" width="500" height="150" fill="#FFFFFF" />
+    <!-- Green Bottom Band -->
+    <rect x="0" y="325" width="500" height="175" fill="#138808" />
+  </g>
+
+  <!-- Central Emblem Ring -->
+  <circle cx="250" cy="250" r="148" fill="#ffffff" opacity="0.96" filter="url(#shadow)" stroke="#0b3b60" stroke-width="4" />
+
+  <!-- Indian National Congress Hand Symbol -->
+  <g transform="translate(250, 260) scale(0.68) translate(-250, -250)" fill="#0b3b60">
+    <!-- Palm & Wrist Base -->
+    <path d="M 205 385 
+             C 205 405, 295 405, 295 385 
+             L 300 270 
+             C 305 240, 310 215, 312 175
+             C 313 155, 295 150, 287 168
+             C 280 185, 275 220, 275 220
+             L 275 130
+             C 275 110, 258 110, 252 125
+             C 246 140, 246 210, 246 210
+             L 246 115
+             C 246 95, 228 95, 222 110
+             C 216 125, 218 215, 218 215
+             L 218 145
+             C 218 128, 200 128, 194 142
+             C 188 156, 192 245, 192 255
+             C 180 250, 160 250, 150 265
+             C 140 280, 155 300, 175 315
+             C 195 330, 202 355, 205 385 Z" />
+    <!-- Finger separations / lines -->
+    <path d="M 193 250 C 197 275, 202 310, 210 335" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 220 215 L 220 300" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 247 210 L 247 295" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 274 220 L 274 290" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <!-- Palm creases -->
+    <path d="M 205 335 C 235 340, 265 325, 285 305" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 215 355 C 240 360, 265 350, 280 330" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>
